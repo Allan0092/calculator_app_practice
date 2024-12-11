@@ -72,9 +72,22 @@ class _CalculatorViewState extends State<CalculatorView> {
                   ),
                   itemCount: lstSymbols.length,
                   itemBuilder: (context, index) {
+                    // Determine the background color based on the symbol
+                    Color backgroundColor;
+                    if (lstSymbols[index] == "C") {
+                      backgroundColor = Colors.redAccent;
+                    } else if (lstSymbols[index] == "=") {
+                      backgroundColor = Colors.greenAccent;
+                    } else if (["+", "-", "*", "/", "%", "<-"]
+                        .contains(lstSymbols[index])) {
+                      backgroundColor = Colors.orangeAccent;
+                    } else {
+                      backgroundColor = Colors.blueGrey;
+                    }
+
                     return ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.amber,
+                        backgroundColor: backgroundColor,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(0),
                         ),
@@ -82,7 +95,9 @@ class _CalculatorViewState extends State<CalculatorView> {
                       onPressed: () {
                         if (lstSymbols[index] == "C") {
                           _textController.text = "";
-                        } else if (lstSymbols[index] == "=") {}
+                        } else if (lstSymbols[index] == "=") {
+                          // Add your calculation logic here
+                        }
                       },
                       child: Text(
                         lstSymbols[index],
