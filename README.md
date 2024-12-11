@@ -71,15 +71,3 @@ To run this app on your local machine, follow these steps:
    ```sh
    flutter run
    ```
-
-## Contributing
-
-Contributions are welcome! If you have any suggestions or improvements, feel free to create a pull request or open an issue.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Thank you for checking out the Calculator App Practice! If you have any questions or feedback, please don't hesitate to reach out.
