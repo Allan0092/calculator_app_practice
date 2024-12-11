@@ -12,7 +12,7 @@ Welcome to the Calculator App Practice! This is a simple and elegant calculator 
 
 ### Home Screen
 
-![Home Screen](screenshots/home_screen.png)
+![Home Screen](Screenshot_1733914134.png)
 
 The home screen of the calculator app. Here, you can see the input field and the grid of buttons for different operations and numbers.
 
